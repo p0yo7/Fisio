@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Nueva rutina",
+        "window": "PanelEstadistica"
+    },
+    {
+        "id": 2,
+        "name": "Abrir rutina",
+        "window": "AbrirRutina"
+    },
+    {
+        "id": 3,
+        "name": "Reporte de estadisticas",
+        "window": "ReporteEstadisticas"
+    },
+    {
+        "id": 4,
+        "name": "Ajustes",
+        "window": "Ajustes"
+    },
+    {
+        "id": 5,
+        "name": "Usuario",
+        "window": "Usuario"
+    }
+]

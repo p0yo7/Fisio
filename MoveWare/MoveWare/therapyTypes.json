@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "name": "Fingers",
+        "description": "Movement for the fingers",
+        "videoURL": "https://youtu.be/MmdigHYdoVg?si=5o_ZBZB5FXDt-2FC",
+        "imageName": "dedos"
+    },
+    {
+        "id": 2,
+        "name": "Hands",
+        "description": "Para los dedos",
+        "videoURL": "https://youtu.be/MmdigHYdoVg?si=5o_ZBZB5FXDt-2FC",
+        "imageName": "manos"
+    },
+    {
+        "id": 3,
+        "name": "Arms",
+        "description": "Para los brazos",
+        "videoURL": "https://youtu.be/MmdigHYdoVg?si=5o_ZBZB5FXDt-2FC",
+        "imageName": "brazos"
+    }
+]
+
