@@ -3,24 +3,24 @@
 
 ### Product Backlog
 ```
-https://github.com/users/PoyitoChicken/projects/3/views/5
+https://github.com/users/p0yo7/projects/3/views/5
 ```
 ### Product Tasks
 ```
-https://github.com/users/PoyitoChicken/projects/7
+https://github.com/users/p0yo7/projects/7
 ```
 
 ### Sprint 1 Scrumboard
 ```
-https://github.com/users/PoyitoChicken/projects/4/views/1
+https://github.com/users/p0yo7/projects/4/views/1
 ```
 ### Sprint 2 Scurumboard
 ```
-https://github.com/users/PoyitoChicken/projects/5
+https://github.com/users/p0yo7/projects/5
 ```
 ### Sprint 3 Scrumboard 
 ```
-https://github.com/users/PoyitoChicken/projects/6
+https://github.com/users/p0y7/projects/6
 ```
 
 ### Document Sprint 1
