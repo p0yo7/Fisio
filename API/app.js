@@ -39,6 +39,14 @@ app.use(session({
     rolling: true
 }));
 
+//update session expiration
+app.use((req, res, next) => {
+    if (req.session) {
+        req.session.nowInMinutes = Math.floor(Date.now() / 60e3);
+    }
+    next();
+});
+
 // Get all used routes
 const usedRoutes = listEndpoints(app)
   .map(route => route.path); // Extract paths from endpoints
