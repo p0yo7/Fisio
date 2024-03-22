@@ -42,21 +42,21 @@ class MainController {
         }
     };
     async getProgressTherapist(req, res){
-        if (!req.session.user || checkSessionStatus(req) === false || req.session.userType !== 'therapist' || req.session.userType !== 'admin'){
+        if (!req.session.user || !isValidSession(req) || (req.session.userType !== 'therapist' && req.session.userType !== 'admin')) {
             return res.status(401).json({ error: 'Unauthorized' });
         }
-        //make sp for therapist to get all their patients' progress
-        const sql = `select * from progress where user = ?`;
+        // Make a stored procedure call for therapists to get all their patients' progress where the input is the therapist's username
+        const sql = 'CALL getTherapistPatientsProgress(?)';
         const user = req.session.user;
-        pool.query(sql, user, (error, results, fields) => {
+        pool.query(sql, [user], (error, results, fields) => {
             if (error) {
-                res.status(500).json("Internal error");
+                return res.status(500).json({ error: 'Internal error' });
             }
-            res.status(200).json(results);
+            return res.status(200).json(results);
         });
     }
     async getProgressPatient(req, res){
-        if (!req.session.user || checkSessionStatus(req) === false || req.session.userType !== 'patient' || req.session.userType !== 'admin'){
+        if (!req.session.user || !isValidSession(req) || (req.session.userType !== 'patient' && req.session.userType !== 'admin')){
             return res.status(401).json({ error: 'Unauthorized' });
         }
         const { user } = req.body;
